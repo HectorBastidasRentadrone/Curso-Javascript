@@ -1,0 +1,47 @@
+PS C:\Users\hecto\Desktop\Curdo Javascript> git init
+Initialized empty Git repository in C:/Users/hecto/Desktop/Curdo Javascript/.git/
+PS C:\Users\hecto\Desktop\Curdo Javascript> git remote add github https://github.com/HectorBastidasRentadrone/Curso-Javascript.git
+PS C:\Users\hecto\Desktop\Curdo Javascript> git add .    
+PS C:\Users\hecto\Desktop\Curdo Javascript> git commit -m "mi primer commit" 
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'hecto@MSI.(none)')
+PS C:\Users\hecto\Desktop\Curdo Javascript> git config --global user.email "hector.bastidas@rentadrone.cl"
+PS C:\Users\hecto\Desktop\Curdo Javascript> git config --global user.name "Hector Bastidas"               
+PS C:\Users\hecto\Desktop\Curdo Javascript> git commit -m "mi primer commit"
+[master (root-commit) d7c2b68] mi primer commit
+ 3 files changed, 40 insertions(+)
+ create mode 100644 TestHTLM.html
+ create mode 100644 ejemplo2.html
+ create mode 100644 ejemplo3.html
+PS C:\Users\hecto\Desktop\Curdo Javascript> git push github main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/HectorBastidasRentadrone/Curso-Javascript.git'
+PS C:\Users\hecto\Desktop\Curdo Javascript> git pull github
+You asked to pull from the remote 'github', but did not specify
+a branch. Because this is not the default configured remote
+for your current branch, you must specify a branch on the command line.
+PS C:\Users\hecto\Desktop\Curdo Javascript> git push github main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/HectorBastidasRentadrone/Curso-Javascript.git'
+PS C:\Users\hecto\Desktop\Curdo Javascript> git branch main
+PS C:\Users\hecto\Desktop\Curdo Javascript> git push github main
+info: please complete authentication in your browser...
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 895 bytes | 895.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/HectorBastidasRentadrone/Curso-Javascript.git
+ * [new branch]      main -> main
